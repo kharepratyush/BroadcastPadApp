@@ -65,7 +65,7 @@ class MainHandler(Handler):
             #self.render_front()
 
         else:
-            self.render_front(error="error")
+            self.render_front(error="Error Generated.. Enter correct values")
 
 
 app = webapp2.WSGIApplication([
