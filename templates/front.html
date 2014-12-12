@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Broadcast</title>
+	</head>
+
+	<body>
+		<h1>BroadCast</h1>
+		<form method="post">
+			<label>
+				Room No 
+				<br>
+				<input type="text"  name="room" value="{{room}}">
+			</label>
+			<br>
+			<label>
+				Hostel No
+				<br>
+				<input type="text" name="hostel" value="{{hostel}}">
+			</label>
+			<br>
+			<label>
+				Information
+				<br>
+				<input type="text" name="info" value="{{info}}">
+			</label>
+			<br>
+			<div class="error">{{error}}</div>
+			<br>
+			<input type="submit">
+ 		</form>
+
+
+
+ 	<hr>
+ 	<hr> 
+
+
+ 	{% for d in datum %}
+ 		<div class="data">
+ 			
+ 			<div class="room">Room No = {{d.room}} 
+ 			</div>
+
+ 			<div class="hostel">Hostel No = {{d.hostel}} 
+ 			</div>
+ 			<div class="info">Details = {{d.info}} 
+ 			</div>
+
+ 		</div>
+ 		<hr>
+ 	{% endfor %}
+
+
+
+
+
+
+	</body>
+
+</html>
